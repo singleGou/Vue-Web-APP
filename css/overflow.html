@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #333C49;
+        }
+
+        .parent {
+            width: 10px;
+            height: 200px;
+            background: linear-gradient(180deg, #E54948 2%, #FFB637 44%, #0BD4FF 97%) top;
+            position: relative;
+        }
+
+        .son {
+            height: 100%;
+            /* width: 10px; */
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        .son1 {
+            width: 20px;
+            /* background-color: green; */
+            height: 71%;
+            background: linear-gradient(180deg, #333C49 50%, rgba(0, 0, 0, .01) 50%) bottom;
+            /* background-image: linear-gradient(180deg, #E54948 2%, #FFB637 44%, #0BD4FF 97%); */
+            background-size: 100% 4px;
+        }
+
+        .son2 {
+            width: 10px;
+            height: 29%;
+            top: 0;
+            background-image: linear-gradient(0deg, #333C49 50%, #5D6878 50%);
+            background-size: 100% 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="son son1"></div>
+        <div class="son son2"></div>
+    </div>
+</body>
+
+</html>
